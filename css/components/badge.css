@@ -1,0 +1,11 @@
+.badge {
+    background-color:tomato;
+    width:24px;
+    height:24px;
+    /*radius 값은 위에 width 값의 반 값을 적어주면 됨*/
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-weight:600;

@@ -1,0 +1,41 @@
+.nav {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color:#f9f9fa;
+    padding:20px 50px;
+    /*box-sizing => 내가 padding 사이즈를 줘도
+    내 box 사이즈를 늘리지 말아줘 라는 뜻!
+    그래서 똑바로 정렬됨*/
+    box-sizing: border-box;
+    border-top:1px solid rgba(121,121,121,0.3);
+}
+
+.nav__list {
+    display:flex;
+    justify-content:space-between;
+}
+
+.nav__link {
+    /*relative를 준 이유는 밑에 자식인 아이콘에 absolute를 줬기 때문에 부모에다가 꼭 relative를 줘야해서 줌*/
+    position:relative;
+    color:#2e363e;
+}
+
+.nav__notification {
+    /*absolute는 가장 가까운 relative를 가진 부모 기준으로 움직이는거임*/
+    position:absolute;
+    left:20px;
+    bottom:15px;
+}
+
+.nav__dot {
+    background-color:tomato;
+    width:6px;
+    height:6px;
+    border-radius:3px;
+    display:flex;
+    position:absolute;
+    left:30px;
+    top:-13px;
+}
